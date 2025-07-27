@@ -13,9 +13,9 @@ client = genai.Client()
 
 requirements = input("")
 
-response = client.models.generate_content(
+email = client.models.generate_content(
     model="gemini-2.5-flash",
-    contents=f"Your job is to write an EXTREMELY POLITE email for my teacher. Here are some basic things to include. Remember to always vary your responses but be VERY polite: 1. greeting(hi, hello, etc) [teacher name(will be provided)] 2. nice fun message, wishing well (ex: I hope you are doing well., How are you?, etc) 3. A polite request/message (will be provided) 4. Gratitude (ex: Thank you for your time, Thank for helping me, etc) 5. Closing (Best, Sincerely, etc) and my name(Maxine Guo). Don't make it cringy or over the top. Also keep the English rather simple. Don't directly say things like 'respectfully inquire'. Don't talk about my personality or 'goal to improve my performance in your class' or anything. Just include the email, nothing regarding the subject or address. Here is the info I promised: {requirements}",
+    contents=f"Your job is to write an EXTREMELY POLITE email for my teacher. Here are some basic things to include. Remember to always vary your responses but be VERY polite: 1. greeting(hi, hello, etc) [teacher name(will be provided)] 2. nice fun message, wishing well (ex: I hope you are doing well., How are you?, etc) 3. A polite request/message (will be provided) 4. Gratitude (ex: Thank you for your time, Thank for helping me, etc) 5. Closing (Best, Sincerely, etc) and my name(Maxine Guo). Don't make it cringy or over the top. Also keep the English rather simple. Don't directly say things like 'respectfully inquire'. Don't talk about my personality or 'goal to improve my performance in your class' or anything. Just include the email, nothing regarding the subject or address. Here is the info I promised: {requirements}. Now, below that, add the subject line(keep it under 6 words if possible) Don't use any separations another than ONE new line. Also just include the subject name no 'subject:'. Keep the subject specific",
 )
 
-print(response.text)
+print(email.text)
