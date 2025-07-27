@@ -1,1 +1,3 @@
 # Email-Writer
+
+The job of the Email Writer is to write your emails to your teachers for you. Sometimes, making your emails polite is really tedious, now, just run the DuckyScript. The script copies the draft you wrote in your email(1 line only). Then, it goes to this very github repo's codespace. It then runs the code and copies the output. Next, the duckscript brings the user back to their email and pastes the new email. It deletes unnecessary lines and adds the subject. After this, the script ends so the user can enter the recipient and review before hitting send.
